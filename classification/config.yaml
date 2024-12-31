@@ -1,0 +1,26 @@
+data:
+  x_path: 'data/X.txt'
+  y1_path: 'data/YL1.txt'
+  y2_path: 'data/Y.txt'
+
+model:
+  name: 'gpt-4o-2024-08-06'
+  temperature: 0
+
+category_mappings:
+  '2': 'biochemistry'
+  '0': 'electrical_engineering'
+  '1': 'psychology'
+
+subcategory_mappings:
+  '0': 'electricity'
+  '1': 'digital_control'
+  '2': 'operational_amplifier'
+  '3': 'social_cognition'
+  '4': 'child_abuse'
+  '6': 'attention'
+  '5': 'depression'
+  '7': 'molecular_biology'
+  '8': 'immunology'
+  '9': 'polymerase_chain_reaction'
+  '10': 'northern_blotting'
