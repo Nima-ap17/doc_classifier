@@ -1,7 +1,7 @@
 # Document Classification Solution
 
 ## Description
-This repository contains a document classification solution aimed at classifying scientific papers into three parent categories and eleven subcategories. We utilized the WOS data (5736 samples) provided by [[Kowsari et al. (2017)](http://arxiv.org/pdf/1709.08267v2)].
+This repository contains a document classification solution aimed at classifying scientific papers into three parent categories and eleven subcategories. I utilized the WOS data (5736 samples) provided by [[Kowsari et al. (2017)](http://arxiv.org/pdf/1709.08267v2)].
 
 ## Motivation
 ### Potential Solutions:
@@ -47,7 +47,7 @@ Below is the classification report for parent and child category predictions:
 | Accuracy      | 0.86         | 0.64        |
 | Number of Samples | 275         | 275            |
 
-These results represent that this moodel has achieved some improvments in compare to the zero shot approach by 6% in accuracy. (although that the test set may no be same as the zero shopt experiment mentioned in the paper)
+These results represent that this moodel has achieved some improvments in compare to the zero shot approach by 6% in accuracy. (although that the test set may not be same as the zero shot experiment mentioned in the paper)
 
 ## Limitations
 1. **Time Constraints**:
@@ -55,7 +55,7 @@ These results represent that this moodel has achieved some improvments in compar
 
 2. **Budget (LLM Cost)**:
    - OpenAI API was used as the LLM model. Due to API costs, the code was not run on the entire dataset.
-   - The LLaMA 3.2 model (3 billion parameters) was also tested using the Ollama framework. However, its performance did not match GPT-4-O, which was expected given the parameter size difference.
+   - The LLaMA 3.2 model (3 billion parameters) was also tested using the Ollama framework. However, its performance did not match GPT-4o, which was expected given the parameter size difference.
 
 ## Next Steps
 1. Develop better prompts to capture detailed and accurate information for each class.
@@ -64,4 +64,3 @@ These results represent that this moodel has achieved some improvments in compar
 4. Seperate the training and inference pipeline
 
 ---
-This repository serves as a foundational experiment, and the insights gained will inform future improvements to the document classification pipeline.
