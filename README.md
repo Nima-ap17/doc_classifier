@@ -41,13 +41,13 @@ Below is the classification report for parent and child category predictions:
 
 | Metric (weighted ave)       | Parent Category | Child Category |
 |---------------|-----------------|----------------|
-| Precision     | 0.87         | 0.75       |
-| Recall        | 0.85         | 0.65        |
-| F1-Score      | 0.86         | 0.63        |
-| Accuracy      | 0.86         | 0.64        |
+| Precision     | 0.90         | 0.75       |
+| Recall        | 0.90         | 0.71        |
+| F1-Score      | 0.90         | 0.70        |
+| Accuracy      | 0.89         | 0.71        |
 | Number of Samples | 275         | 275            |
 
-These results represent that this moodel has achieved some improvments in compare to the zero shot approach by 6% in accuracy. (although that the test set may not be same as the zero shot experiment mentioned in the paper)
+These results represent that this moodel has achieved some improvments in compare to the zero shot approach by 13% in accuracy. (although that the test set may not be same as the zero shot experiment mentioned in the paper)
 
 ## Limitations
 1. **Time Constraints**:
@@ -63,4 +63,23 @@ These results represent that this moodel has achieved some improvments in compar
 3. Better modularity within IterativeDescriptionLearner class.
 4. Seperate the training and inference pipeline
 
+# Instructions to Run the Code
+
+This project uses a Makefile to streamline the setup and execution process. Below are the commands and their explanations:
+
+## 1. Setting Up the Environment
+Before running the code, set up the Conda environment using the `setup-environment` command. This will create a Conda environment based on the specifications in the `environment.yaml` file.
+
+### Command:
+```bash
+make setup-environment
+```
+
+## 2. Running the Classification Pipeline
+Once the environment is set up, you can execute the classification pipeline using the `run-pipeline` command.
+
+### Command:
+```bash
+make run-pipeline
+```
 ---
