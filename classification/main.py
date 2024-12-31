@@ -73,8 +73,5 @@ def main():
     save_evaluation_results(metrics_l1, output_dir / 'evaluation_l1.txt')
     save_evaluation_results(metrics_l2, output_dir / 'evaluation_l2.txt')
 
-    
-    print(test_data)
-
 if __name__ == '__main__':
     main()
