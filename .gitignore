@@ -1,0 +1,13 @@
+__pycache__/
+
+# Environments
+.env
+
+.DS_Store
+
+# data
+data/*
+!data/.gitkeep
+
+# output
+output/*
