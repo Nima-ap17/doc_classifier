@@ -1,0 +1,13 @@
+name: doc-classifier
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip==23.2
+  - python==3.11.5
+
+  - pip:
+    - ipykernel==6.25.1
+    - notebook==7.0.3
+    - -r requirements.txt
+    
