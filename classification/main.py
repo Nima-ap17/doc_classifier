@@ -56,8 +56,6 @@ def main():
     logger.info('Initializing the document classifier')
     classifier = DocumentClassifier(llm=llm, parent_desc=parent_desc, child_desc=child_desc)
     
-    print(parent_desc)
-    print(child_desc)
     # Make predictions
     logger.info('Making predictions')
     test_data[['prediction_parent', 'prediction_child']] = test_data['text'].apply(
